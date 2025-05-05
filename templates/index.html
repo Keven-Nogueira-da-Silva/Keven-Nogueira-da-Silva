@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantinho da Nega - Espaço para Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/stylet.css">
+    <link rel="icon" href="favicon_new.ico" type="image/x-icon">   
+</head>
+<body class="bg-blue-50 font-sans">
+    <link rel="shortcut icon" href="imagens/Imagem do WhatsApp de 2025-04-28 à(s) 16.15.54_764dd945.jpg" type="image/x-icon">
+  <div id="listaReservas" class="p-6"></div>
+    <!-- Header -->
+    <header class="bg-blue-500 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <i class="fas fa-home text-3xl text-blue-100"></i>
+                    <h1 class="text-3xl font-bold">Cantinho da Nega</h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://wa.me/5521991856289" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center transition transform hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                    <a href="https://instagram.com/cantinhodanega22" target="_blank" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full flex items-center transition transform hover:scale-105">
+                        <i class="fab fa-instagram mr-2"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative py-16 md:py-24">
+        <div class="absolute inset-0 bg-blue-400 opacity-20"></div>
+        <div class="relative container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Seu Espaço para Eventos Especiais</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Conforto, diversão e momentos inesquecíveis para sua família e amigos</p>
+            <div class="price-tag">
+                <i class="fas fa-tag mr-2"></i> Valor do espaço: R$ 550,00
+            </div>
+            <button id="openReservationBtn" class="btn-primary text-white font-bold py-3 px-8 rounded-full transition duration-300 mt-6">
+                <i class="fas fa-calendar-check mr-2"></i> Reservar Agora 
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Nossos Destaques</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card p-6 rounded-xl border border-blue-100">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Duração do Evento</h3>
+                    <p class="text-blue-600">10 horas de festa, sendo 1 hora antes para ornamentação e 1 hora depois para organização do espaço.</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl border border-blue-100">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Piscina Refrescante</h3>
+                    <p class="text-blue-600">Área de lazer com piscina para adultos e crianças se divertirem</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl border border-blue-100">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Churrasqueira Completa</h3>
+                    <p class="text-blue-600">Estrutura completa para preparar aquele churrasco especial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Info Section -->
+            <article class="lg:w-1/2 bg-white p-8 rounded-xl shadow-md border border-blue-100">
+                <h2 class="text-2xl font-bold text-blue-700 mb-6 border-b pb-2">Tudo que oferecemos:</h2>
+                
+                <ul class="space-y-3">
+                    <li class="bg-blue-50 p-4 rounded-lg">
+                        <div class="item-com-seta flex justify-between items-center cursor-pointer" onclick="toggleLista('casa', 'setaCasa')">
+                            <span class="font-semibold text-blue-700">Casa completa</span>
+                            <span class="seta text-blue-500" id="setaCasa">&#9654;</span>
+                        </div>
+                        <ul id="casa" class="sublista pl-4 mt-2 space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-bed text-blue-500 mr-2"></i> 2 quartos
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-bath text-blue-500 mr-2"></i> Banheiro
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-couch text-blue-500 mr-2"></i> Sala
+                            </li>
+                            <li>
+                                <div class="item-com-seta flex justify-between items-center cursor-pointer bg-blue-100 p-2 rounded mt-2" onclick="toggleLista('cozinha', 'setaCozinha')">
+                                    <span class="font-medium text-blue-600">Cozinha completa</span>
+                                    <span class="seta text-blue-500" id="setaCozinha">&#9654;</span>
+                                </div>
+                                <ul id="cozinha" class="sublista pl-4 mt-2 space-y-2">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-snowflake text-blue-500 mr-2"></i> Geladeira
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-fire text-blue-500 mr-2"></i> Fogão
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-microwave text-blue-500 mr-2"></i> Micro-ondas
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-swimming-pool text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Piscina</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-utensils text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Churrasqueira</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-fire-alt text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Fogão a lenha</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-child text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Pula-pula</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-chess-board text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">6 jogos de mesas</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-shower text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Chuveirão</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-umbrella-beach text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Área coberta</span>
+                    </li>
+                    <li class="flex items-center bg-blue-50 p-4 rounded-lg">
+                        <i class="fas fa-car text-blue-500 mr-3 text-xl"></i>
+                        <span class="text-blue-700">Garagem</span>
+                    </li>
+                </ul>
+                
+                <div class="mt-8 bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">Informações Importantes</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-clock text-blue-500 mr-3 text-xl mt-1"></i>
+                            <span><strong class="text-blue-600">Duração:</strong> 10 horas de festa, sendo 1 hora antes para ornamentação e 1 hora depois para organização do espaço.</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-tag text-blue-500 mr-3 text-xl mt-1"></i>
+                            <span><strong class="text-blue-600">Valor:</strong> R$ 550,00:<br>
+                                "Para garantir a data, cobramos um valor de 50% como sinal, O valor restante é pago no dia do evento."<br>
+                                <strong>Obs:</strong> "Não devolvemos o sinal"</span>
+                        </p>
+                        <!-- Adição dos métodos de pagamento -->
+                        <p class="flex items-start">
+                            <i class="fas fa-money-bill-wave text-blue-500 mr-3 text-xl mt-1"></i>
+                            <span><strong class="text-blue-600">Formas de Pagamento:</strong><br>
+                                • PIX <br>
+                                • Cartão de crédito <br>
+                                • Cartão de débito<br>
+                                • Dinheiro</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">Entre em Contato</h3>
+                    <address class="space-y-3">
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 text-xl"></i>
+                            <span><strong class="text-blue-600">Endereço:</strong> Rua Cartier - lote 19, quadra 9, Jardim Líder / Cângulo</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fab fa-instagram text-blue-500 mr-3 text-xl"></i>
+                            <span><strong class="text-blue-600">Instagram:</strong> 
+                            <a href="https://instagram.com/cantinhodanega22" target="_blank" class="text-blue-500 hover:underline ml-1">@cantinhodanega22</a></span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fab fa-whatsapp text-blue-500 mr-3 text-xl"></i>
+                            <span><strong class="text-blue-600">WhatsApp:</strong> 
+                            <a href="https://wa.me/5521991856289" target="_blank" class="text-blue-500 hover:underline ml-1">(21) 99185-6289</a></span>
+                        </p>
+                    </address>
+                </div>
+            </article>
+            
+            <!-- Gallery Section -->
+            <div class="lg:w-1/2">
+                <h2 class="text-2xl font-bold text-blue-700 mb-6 border-b pb-2">Galeria de Fotos</h2>
+                <div class="image-gallery">
+                    <div class="photo-container">
+                        <img src="imagens/Imagem do WhatsApp de 2025-05-02 à(s) 10.41.08_454c4dd1.jpg" alt="Foto do espaço" class="gallery-image" onclick="zoomImage(this)">
+                    </div>
+                    
+                    <div class="photo-container">
+                        <img src="imagens/Imagem do WhatsApp de 2025-05-02 à(s) 10.41.07_8ebd87a0.jpg" alt="Foto do espaço" class="gallery-image" onclick="zoomImage(this)">
+                    </div>
+                    
+                    <div class="photo-container">
+                        <img src="imagens/Imagem do WhatsApp de 2025-04-28 à(s) 16.23.08_3453a128.jpg"Foto do espaço class="gallery-image" onclick="zoomImage(this)">
+                    </div>
+                    
+                    <div class="photo-container">
+                        <img src="imagens/Imagem do WhatsApp de 2025-04-29 à(s) 10.18.32_aedbce56.jpg" alt="Foto do espaço" class="gallery-image" onclick="zoomImage(this)">
+
+                    </div>
+                    
+                    <div class="photo-container">
+                        <img src="imagens/Imagem do WhatsApp de 2025-04-28 à(s) 19.47.24_3b51cad3.jpg" alt="Foto do espaço" class="gallery-image" onclick="zoomImage(this)">
+
+                    </div>
+                    
+                    <div class="photo-container">
+                        <img src="imagens/Imagem do WhatsApp de 2025-04-28 à(s) 16.23.08_9f1e07bd.jpg" alt="Foto do espaço" class="gallery-image" onclick="zoomImage(this)">
+                    </div>
+                    <video controls>
+                        <source src="imagens/Vídeo do WhatsApp de 2025-05-02 à(s) 11.14.24_b30ed2f4.mp4" type="video/mp4">
+                        <source src="imagens/Vídeo do WhatsApp de 2025-05-02 à(s) 11.14.24_b30ed2f4.mp4" type="video/webm">
+                    </video>
+
+                    <video controls>
+                        <source src="imagens/Vídeo do WhatsApp de 2025-05-04 à(s) 12.57.06_f809cc8a.mp4" type="video/mp4">
+                        <source src="imagens/Vídeo do WhatsApp de 2025-05-04 à(s) 12.57.06_f809cc8a.mp4" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i class="fas fa-home mr-2"></i> Cantinho da Nega
+                    </h3>
+                    <p class="text-blue-100 mt-1">Seu espaço para eventos e confraternizações</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://wa.me/5521991856289" target="_blank" class="bg-blue-500 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition transform hover:scale-110">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/cantinhodanega22" target="_blank" class="bg-blue-500 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition transform hover:scale-110">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-500 mt-6 pt-6 text-center text-blue-100">
+                <p>&copy; 2025 Cantinho da Nega. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site de Reservas - Cantinho da Nega</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styled.css">
+  <link rel="icon" href="favicon_new.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/static/css/styled.css">
+
+</head>
+<body class="min-h-screen bg-gradient-to-b from-primary-50 to-primary-100">
+  <div class="wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold text-primary-800 mb-2">
+        <i class="fas fa-calendar-check mr-2"></i> Cantinho da Nega
+      </h1>
+      <p class="text-primary-600">Garanta sua data para eventos especiais</p>
+    </div>
+
+    <div id="mensagem" class="mb-6"></div>
+
+    <div class="glass-effect rounded-xl shadow-xl p-6 mb-10">
+      <h2 class="text-2xl font-semibold text-primary-700 mb-4 flex items-center">
+        <i class="fas fa-pen-to-square mr-2"></i> Nova Reserva
+      </h2>
+      <form id="formReserva" class="space-y-4">
+        <div>
+          <label for="nome" class="block text-primary-700 font-medium mb-1">Nome Completo</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <i class="fas fa-user text-primary-400"></i>
+            </div>
+            <input type="text" id="nome" required 
+              class="w-full pl-10 pr-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition duration-200">
+          </div>
+        </div>
+
+        <div>
+          <label for="telefone" class="block text-primary-700 font-medium mb-1">Telefone</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <i class="fas fa-phone text-primary-400"></i>
+            </div>
+            <input type="text" id="telefone" required 
+              class="w-full pl-10 pr-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition duration-200">
+          </div>
+        </div>
+
+        <div>
+          <label for="data" class="block text-primary-700 font-medium mb-1">Data do Evento</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <i class="fas fa-calendar-day text-primary-400"></i>
+            </div>
+            <input type="date" id="data" required 
+              class="w-full pl-10 pr-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition duration-200">
+          </div>
+        </div>
+
+        <div>
+          <label for="pessoas" class="block text-primary-700 font-medium mb-1">Quantidade de Pessoas</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <i class="fas fa-users text-primary-400"></i>
+            </div>
+            <input type="number" id="pessoas" required 
+              class="w-full pl-10 pr-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition duration-200">
+          </div>
+        </div>
+
+        <div>
+          <label for="evento" class="block text-primary-700 font-medium mb-1">Tipo de Evento</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <i class="fas fa-gift text-primary-400"></i>
+            </div>
+            <select id="evento" required 
+              class="w-full pl-10 pr-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition duration-200">
+              <option value="">Selecione...</option>
+              <option value="Aniversário">Aniversário</option>
+              <option value="Churrasco">Churrasco</option>
+              <option value="Festa Familiar">Festa Familiar</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="obs" class="block text-primary-700 font-medium mb-1">Observações</label>
+          <textarea id="obs" rows="3" 
+            class="w-full px-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition duration-200"></textarea>
+        </div>
+
+        <button type="submit" 
+          class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-200 flex items-center justify-center">
+          <i class="fas fa-paper-plane mr-2"></i> Fazer Reserva
+        </button>
+      </form>
+    </div>
+
+    <!-- Área de Pagamento -->
+    <div id="areaPagamento" class="glass-effect rounded-xl shadow-xl p-6 mb-10 hidden">
+      <h2 class="text-2xl font-semibold text-primary-700 mb-4 flex items-center">
+        <i class="fas fa-money-bill-wave mr-2"></i> Confirmação de Pagamento
+      </h2>
+      <p class="mb-4 text-primary-700">Para confirmar sua reserva, é necessário realizar o pagamento de 50% do valor do espaço.</p>
+      
+      <div class="bg-primary-50 rounded-lg p-4 mb-6 border border-primary-200">
+        <h3 class="font-bold text-primary-700 mb-3">Métodos de Pagamento:</h3>
+        
+        <div class="space-y-4">
+          <!-- Método PIX -->
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-start">
+              <div class="bg-pix-100 p-3 rounded-full mr-4">
+                <i class="fab fa-pix text-pix text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-800 mb-1">PIX</h4>
+                <p class="text-sm text-gray-600 mb-3">Chave: e-mail: bobnogueira4@gmail.com</p>
+                <button onclick="mostrarPix()" class="w-full bg-pix hover:bg-pix-800 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                  <i class="fas fa-qrcode mr-2"></i> Pagar com PIX
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Método Cartão -->
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-start">
+              <div class="bg-cartao-100 p-3 rounded-full mr-4">
+                <i class="fab fa-cc-visa text-cartao text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-800 mb-1">Cartão de Crédito</h4>
+                <p class="text-sm text-gray-600 mb-3">Acréscimo de 5% no valor</p>
+                <button onclick="mostrarCartao()" class="w-full bg-cartao hover:bg-cartao-800 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                  <i class="fas fa-credit-card mr-2"></i> Pagar com Cartão
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Método Dinheiro -->
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-3 rounded-full mr-4">
+                <i class="fas fa-money-bill-wave text-green-600 text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-800 mb-1">Dinheiro</h4>
+                <p class="text-sm text-gray-600 mb-3">Pagamento no local no dia do evento</p>
+                <button onclick="finalizarPagamento('dinheiro')" class="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                  <i class="fas fa-hand-holding-usd mr-2"></i> Reservar com Dinheiro
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Área PIX -->
+      <div id="pixArea" class="hidden bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold text-primary-700 mb-4 flex items-center">
+          <i class="fab fa-pix mr-2 text-pix"></i> Pagamento via PIX
+        </h3>
+        <img id="mj" src="imagens/Imagem do WhatsApp de 2025-04-30 à(s) 13.34.10_3cd76bf2.jpg" alt="QR Code PIX" class="mx-auto mb-4 max-w-xs" style="width: 130px;">
+        <div class="space-y-2">
+          <p class="text-gray-700"><span class="font-semibold">Chave PIX:</span> E-mail: bobnogueira4@gmail.com</p>
+          <p class="text-gray-700"><span class="font-semibold">Nome:</span> Angelica nogueira de mesquita</p> 
+          <p class="text-gray-700"><span class="font-semibold">banco:</span> mercado pago</p>
+        </div>
+        <button onclick="finalizarPagamento('pix')" class="w-full mt-6 bg-pix hover:bg-pix-800 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+          <i class="fas fa-check-circle mr-2"></i> Já efetuei o pagamento
+        </button>
+      </div>
+
+      <!-- Área Cartão -->
+      <div id="cartaoArea" class="hidden bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <h3 class="text-xl font-semibold text-primary-700 mb-4 flex items-center">
+          <i class="fas fa-credit-card mr-2 text-cartao"></i> Pagamento com Cartão
+        </h3>
+        <p class="mb-4 text-gray-700">Para pagamento com cartão, entre em contato diretamente pelo WhatsApp:</p>
+        <a href="https://wa.me/5521991856289" class="inline-flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+          <i class="fab fa-whatsapp mr-2"></i> Contato via WhatsApp
+        </a>
+        <button onclick="finalizarPagamento('cartao')" class="w-full mt-4 bg-cartao hover:bg-cartao-800 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+          <i class="fas fa-check-circle mr-2"></i> Já entrei em contato
+        </button>
+      </div>
+    </div>
+
+    <div class="glass-effect rounded-xl shadow-xl p-6">
+      <h2 class="text-2xl font-semibold text-primary-700 mb-4 flex items-center">
+        <i class="fas fa-list-check mr-2"></i> Reservas Realizadas
+      </h2>
+      <div id="listaReservas" class="space-y-4"></div>
+    </div>
+  </div>
+
+  <script>
+    tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: {
+            50: '#f0f9ff',
+            100: '#e0f2fe',
+            200: '#bae6fd',
+            300: '#7dd3fc',
+            400: '#38bdf8',
+            500: '#0ea5e9',
+            600: '#0284c7',
+            700: '#0369a1',
+            800: '#075985',
+            900: '#0c4a6e',
+          },
+          success: '#28a745',
+          danger: '#dc3545',
+          warning: '#ffc107',
+          pix: '#32BBAD',
+          cartao: '#1A4F8B'
+        }
+      }
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const formReserva = document.getElementById('formReserva');
+    const mensagemDiv = document.getElementById('mensagem');
+    const listaReservas = document.getElementById('listaReservas');
+    const areaPagamento = document.getElementById('areaPagamento');
+    
+    // Configurações iniciais
+    document.getElementById('data').min = new Date().toISOString().split('T')[0];
+    configurarMascaraTelefone();
+    carregarReservas();
+    
+    // Formulário de reserva
+    formReserva.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const reservaData = {
+        nome_cliente: document.getElementById('nome').value,
+        telefone: document.getElementById('telefone').value,
+        data_reserva: document.getElementById('data').value,
+        quantidade_pessoas: document.getElementById('pessoas').value,
+        tipo_evento: document.getElementById('evento').value,
+        observacoes: document.getElementById('obs').value
+      };
+      
+      fetch('/api/reservas', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(reservaData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          mostrarMensagem('Reserva realizada com sucesso!', 'success');
+          formReserva.reset();
+          carregarReservas();
+          
+          // Mostrar área de pagamento com o ID da reserva
+          areaPagamento.classList.remove('hidden');
+          areaPagamento.dataset.reservaId = data.reserva_id;
+        } else {
+          mostrarMensagem(`Erro: ${data.error}`, 'error');
+        }
+      })
+      .catch(error => {
+        mostrarMensagem('Erro ao conectar com o servidor', 'error');
+        console.error('Error:', error);
+      });
+    });
+    
+    // Função para carregar reservas
+    function carregarReservas() {
+      fetch('/api/reservas')
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            renderizarReservas(data.reservas);
+          } else {
+            console.error('Erro ao carregar reservas:', data.error);
+          }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+    
+    // Função para renderizar reservas
+    function renderizarReservas(reservas) {
+      listaReservas.innerHTML = '';
+      
+      if (reservas.length === 0) {
+        listaReservas.innerHTML = `
+          <div class="text-center py-8">
+            <i class="fas fa-calendar-xmark text-4xl text-primary-300 mb-4"></i>
+            <p class="text-primary-500">Nenhuma reserva cadastrada ainda</p>
+          </div>
+        `;
+        return;
+      }
+      
+      reservas.forEach((r, i) => {
+        const div = document.createElement("div");
+        div.className = "bg-white rounded-lg shadow-md p-5 relative border-l-4 border-primary-500";
+        
+        const statusClass = r.status === 'confirmada' ? 
+          'bg-green-500 text-white' : 'bg-yellow-500 text-white';
+        
+        div.innerHTML = `
+          <div class="absolute top-3 right-3 ${statusClass} text-xs font-bold px-2 py-1 rounded-full">
+            <i class="fas fa-${r.status === 'confirmada' ? 'check' : 'clock'} mr-1"></i> 
+            ${r.status === 'confirmada' ? 'Confirmada' : 'Pendente'}
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+                <i class="fas fa-user mr-2 text-sm"></i> Nome
+              </h3>
+              <p class="text-gray-700">${r.nome_cliente}</p>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+                <i class="fas fa-phone mr-2 text-sm"></i> Telefone
+              </h3>
+              <p class="text-gray-700">${r.telefone}</p>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+                <i class="fas fa-calendar-day mr-2 text-sm"></i> Data
+              </h3>
+              <p class="text-gray-700">${formatarData(r.data_reserva)}</p>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+                <i class="fas fa-users mr-2 text-sm"></i> Pessoas
+              </h3>
+              <p class="text-gray-700">${r.quantidade_pessoas}</p>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+              <i class="fas fa-gift mr-2 text-sm"></i> Tipo de Evento
+            </h3>
+            <p class="text-gray-700">${r.tipo_evento}</p>
+          </div>
+          
+          ${r.observacoes ? `
+            <div class="mb-4">
+              <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+                <i class="fas fa-comment-dots mr-2 text-sm"></i> Observações
+              </h3>
+              <p class="text-gray-700">${r.observacoes}</p>
+            </div>
+          ` : ''}
+          
+          <div class="mb-4">
+            <h3 class="font-bold text-primary-700 mb-1 flex items-center">
+              <i class="fas fa-money-bill-wave mr-2 text-sm"></i> Método de Pagamento
+            </h3>
+            <p class="text-gray-700">${r.metodo_pagamento}</p>
+          </div>
+          
+          <div class="pt-4 border-t border-gray-200">
+            <label class="block text-sm font-medium text-primary-700 mb-1">Senha para deletar: “Em caso de cancelamento, entre em contato conosco.”</label>
+            <div class="flex space-x-2">
+              <input type="password" id="senha-${r.id}" placeholder="Digite a senha" 
+                class="flex-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+              <button onclick="deletarReserva(${r.id})" 
+                class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md transition duration-200">
+                <i class="fas fa-trash mr-1"></i> Deletar
+              </button>
+            </div>
+          </div>
+        `;
+        listaReservas.appendChild(div);
+      });
+    }
+    
+    // Função para formatar data
+    function formatarData(dataString) {
+      const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+      return new Date(dataString).toLocaleDateString('pt-BR', options);
+    }
+    
+    // Função para mostrar mensagens
+    function mostrarMensagem(texto, tipo) {
+      const alertClasses = {
+        success: "bg-green-100 border border-green-400 text-green-700",
+        error: "bg-red-100 border border-red-400 text-red-700"
+      };
+      
+      mensagemDiv.innerHTML = `
+        <div class="px-4 py-3 rounded relative ${alertClasses[tipo]}" role="alert">
+          <span class="block sm:inline">${texto}</span>
+        </div>
+      `;
+      setTimeout(() => mensagemDiv.innerHTML = '', 3000);
+    }
+    
+    // Configurar máscara de telefone
+    function configurarMascaraTelefone() {
+      const telefoneInput = document.getElementById('telefone');
+      telefoneInput.addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 11) value = value.substring(0, 11);
+        
+        if (value.length > 0) {
+          value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+          if (value.length > 10) {
+            value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+          }
+        }
+        
+        e.target.value = value;
+      });
+    }
+  });
+  
+  // Funções globais para pagamento
+  function mostrarPix() {
+    document.getElementById('pixArea').classList.remove('hidden');
+    document.getElementById('cartaoArea').classList.add('hidden');
+  }
+  
+  function mostrarCartao() {
+    document.getElementById('cartaoArea').classList.remove('hidden');
+    document.getElementById('pixArea').classList.add('hidden');
+  }
+  
+  function finalizarPagamento(metodo) {
+    const reservaId = document.getElementById('areaPagamento').dataset.reservaId;
+    const metodoPagamento = metodo === 'pix' ? 'PIX (50% adiantado)' : 
+                          metodo === 'cartao' ? 'Cartão (50% adiantado)' : 
+                          'Dinheiro (combinar pagamento)';
+    
+    fetch(`/api/reservas/${reservaId}/pagamento`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ metodo_pagamento: metodoPagamento })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Pagamento registrado com sucesso! Obrigado pela sua reserva.');
+        document.getElementById('areaPagamento').classList.add('hidden');
+        location.reload();
+      } else {
+        alert(`Erro: ${data.error}`);
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Erro ao conectar com o servidor');
+    });
+  }
+  
+  function deletarReserva(id) {
+    const senha = document.getElementById(`senha-${id}`).value;
+    
+    fetch(`/api/reservas/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ senha: senha })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Reserva deletada com sucesso!');
+        location.reload();
+      } else {
+        alert(`Erro: ${data.error}`);
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Erro ao conectar com o servidor');
+    });
+  }
+  </script>
+
+</body>
+</html>
