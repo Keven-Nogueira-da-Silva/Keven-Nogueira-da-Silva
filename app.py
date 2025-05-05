@@ -2,20 +2,18 @@ from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import os
-import psycopg2
 from urllib.parse import urlparse
 
 # Configuração do Flask
 app = Flask(__name__)
 
-# Configuração automática para Heroku/Railway
+# Configuração do Banco de Dados (prioriza PostgreSQL no Railway, fallback para SQLite local)
 DATABASE_URL = os.environ.get('DATABASE_URL')
 
 if DATABASE_URL:
-    # Configuração para PostgreSQL (Heroku/Railway)
+    # Configuração para PostgreSQL (Railway/Heroku)
     if DATABASE_URL.startswith('postgres://'):
         DATABASE_URL = DATABASE_URL.replace('postgres://', 'postgresql://', 1)
-    
     app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 else:
     # Fallback para SQLite local
