@@ -1,4 +1,17 @@
-<h2 align="left">Hi 👋! My name is ... and I'm a ..., from ....</h2>
+<h2 align="left">👋 Olá! Sou Keven Nogueira da Silva, de Duque de Caxias (RJ), atualmente em transição de carreira para a área de tecnologia, com foco no desenvolvimento back-end em Java.
+Tenho me dedicado ao estudo de programação orientada a objetos, algoritmos, estruturas de dados e boas práticas de codificação, com o objetivo de construir soluções robustas e escaláveis.
+estou em busca de oportunidades para aplicar meus conhecimentos, evoluir com projetos reais e contribuir ativamente com o time de tecnologia de uma empresa inovadora.
+
+
+📍 Duque de Caxias (RJ)
+💼 Transição de carreira para a área de programação com foco em Java (Back-End)
+🛠️ Conhecimentos em POO, estruturas de dados, lógica de programação e boas práticas
+🎯 Objetivo: Atuar como desenvolvedor Java e crescer profissionalmente na área de tecnologia
+
+
+Sou Keven Nogueira, de Duque de Caxias (RJ), e atualmente estou migrando para a área de desenvolvimento back-end com foco em Java.
+Tenho estudado ativamente conceitos de POO, estruturas de dados, lógica de programação e ferramentas voltadas ao ecossistema Java.
+Estou montando meu portfólio com projetos práticos e evoluindo diariamente como desenvolvedor.</h2>
 
 ###
 
