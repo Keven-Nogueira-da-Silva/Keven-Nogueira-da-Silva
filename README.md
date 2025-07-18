@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! </h2>
+<h2 align="left">Hi 👋!Olá! Eu chamo Keven Nogueira da Silva, sou de Duque de Caxias (RJ) e estou migrando para uma área de programação com foco em Java </h2>
 
 ###
 
