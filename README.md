@@ -39,6 +39,4 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/Keven-Nogueira-da-Silva/Keven-Nogueira-da-Silva/output/snake.svg" alt="Snake animation" />
-
 ###
