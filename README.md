@@ -1,44 +1,56 @@
-<h2 align="left">👋 Olá! Sou Keven Nogueira da Silva, de Duque de Caxias (RJ), atualmente em transição de carreira para a área de tecnologia, com foco no desenvolvimento back-end em Java.
-Tenho me dedicado ao estudo de programação orientada a objetos, algoritmos, estruturas de dados e boas práticas de codificação, com o objetivo de construir soluções robustas e escaláveis.
-estou em busca de oportunidades para aplicar meus conhecimentos, evoluir com projetos reais e contribuir ativamente com o time de tecnologia de uma empresa inovadora.</h2>
+## 👋 Olá! Eu sou o Keven Nogueira
 
-###
+Sou Desenvolvedor **Back-End Java** focado em criar APIs e sistemas robustos usando **Spring Boot**, **JPA/Hibernate**, **MySQL** e boas práticas de desenvolvimento.  
+Atualmente estou evoluindo minhas habilidades através de projetos reais, estudos guiados e construção prática de aplicações completas.
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Keven-Nogueira-da-Silva&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Keven-Nogueira-da-Silva&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
-</div>
 
-###
+### 🚀 O que estou estudando e construindo
+- Desenvolvimento Back-End com **Java + Spring Boot**
+- Integração com **Bancos de Dados Relacionais (MySQL / H2)**
+- Padrões de Projeto e Arquitetura de APIs
+- Deploy de aplicações
+- Versionamento com Git & GitHub
 
-<img align="right" height="0" src=""  />
+---
 
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="30" alt="intellij logo"  />
-</div>
-
-###
+### 💻 Tecnologias e Ferramentas
 
 <div align="left">
-  <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="whatsapp logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="Java" />
+  <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="Spring Boot" />
+  <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="MySQL" />
+  <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="Git" />
+  <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML" />
+  <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS" />
 </div>
 
-###
+---
 
-<br clear="both">
+### 🔥 Projetos em Destaque
 
-###
+| Projeto | Tecnologias | Descrição |
+|--------|-------------|-----------|
+| **API de Produtos e Estoque** | Java · Spring Boot · JPA · MySQL | CRUD completo + controle de estoque e filtro por categoria |
+| **Sistema de Reservas em Flask** | Python · Flask · SQLite | Gerenciamento de reservas com persistência |
+
+> *Posso adicionar os links depois que você me passar seus repositórios.*
+
+---
+
+### 🌎 Onde me encontrar
+- **LinkedIn: https://www.linkedin.com/in/keven-nogueira-da-silva-44237b361/
+- **GitHub: https://github.com/Keven-Nogueira-da-Silva 
+- **Portfólio: https://keven-nogueira-da-silva.github.io/Porti.DEVJava/
+
+---
+
+### ✨ Objetivo
+Ingressar como **Desenvolvedor Back-End Java** e evoluir constantemente construindo soluções reais.
+
+---
+
