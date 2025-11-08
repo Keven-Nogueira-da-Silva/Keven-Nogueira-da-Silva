@@ -44,7 +44,6 @@ Atualmente estou evoluindo minhas habilidades através de projetos reais, estudo
 
 ### 🌎 Onde me encontrar
 - **LinkedIn: https://www.linkedin.com/in/keven-nogueira-da-silva-44237b361/
-- **GitHub: https://github.com/Keven-Nogueira-da-Silva 
 - **Portfólio: https://keven-nogueira-da-silva.github.io/Porti.DEVJava/
 
 ---
