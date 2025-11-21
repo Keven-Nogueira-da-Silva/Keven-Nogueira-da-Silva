@@ -1,15 +1,16 @@
 ## 👋 Olá! Eu sou o Keven Nogueira
 
-Sou Desenvolvedor **Back-End Java** focado em criar APIs e sistemas robustos usando **Spring Boot**, **JPA/Hibernate**, **MySQL** e boas práticas de desenvolvimento.  
-Atualmente estou evoluindo minhas habilidades através de projetos reais, estudos guiados e construção prática de aplicações completas.
+Sou Desenvolvedor **Back-End Java**, focado na criação de APIs escaláveis usando **Spring Boot**, **Hibernate/JPA**, **MySQL**, **PostgreSQL** e boas práticas de arquitetura.  
+Atualmente estou evoluindo minhas skills através de projetos reais, estudos guiados e construção prática de aplicações completas.
 
+---
 
 ### 🚀 O que estou estudando e construindo
 - Desenvolvimento Back-End com **Java + Spring Boot**
-- Integração com **Bancos de Dados Relacionais (MySQL / H2)**
-- Padrões de Projeto e Arquitetura de APIs
-- Deploy de aplicações
-- Versionamento com Git & GitHub
+- Integração com **bancos de dados relacionais (MySQL, PostgreSQL, H2)**
+- Padrões de projeto e arquitetura de APIs REST
+- Deploy e publicação de aplicações
+- Git e versionamento profissional
 
 ---
 
@@ -22,21 +23,20 @@ Atualmente estou evoluindo minhas habilidades através de projetos reais, estudo
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="MySQL" />
   <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="PostgreSQL" />
+  <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="Git" />
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML" />
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS" />
   <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"  height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" height="40" alt="IntelliJ IDEA" />
   <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"  height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" alt="VSCode" />
   <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="40 />  
-  <div>
-  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" height="40" alt="SQLite" />
+</div>
 
 ---
 
@@ -44,21 +44,20 @@ Atualmente estou evoluindo minhas habilidades através de projetos reais, estudo
 
 | Projeto | Tecnologias | Descrição |
 |--------|-------------|-----------|
-| **API de Produtos e Estoque** | Java · Spring Boot · JPA · MySQL | CRUD completo + controle de estoque e filtro por categoria |
-| **Sistema de Reservas em Flask** | Python · Flask · SQLite | Gerenciamento de reservas com persistência |
+| **API de Produtos e Estoque** | Java · Spring Boot · JPA · MySQL | CRUD completo, categorias, controle de estoque e filtros avançados |
+| **Sistema de Reservas em Flask** | Python · Flask · SQLite | Gerenciamento de reservas e integração back-end |
 
-> *Posso adicionar os links depois que você me passar seus repositórios.*
+> *Posso adicionar os links assim que você me enviar seus repositórios.*
 
 ---
 
 ### 🌎 Onde me encontrar
-- **LinkedIn: https://www.linkedin.com/in/keven-nogueira-da-silva-44237b361/
-- **Portfólio: https://keven-nogueira-da-silva.github.io/Porti.DEVJava/
+- **LinkedIn:** https://www.linkedin.com/in/keven-nogueira-da-silva-44237b361/  
+- **Portfólio:** https://keven-nogueira-da-silva.github.io/Porti.DEVJava/
 
 ---
 
 ### ✨ Objetivo
-Ingressar como **Desenvolvedor Back-End Java** e evoluir constantemente construindo soluções reais.
+Ingressar como **Desenvolvedor Back-End Java**, criando soluções reais e evoluindo continuamente.
 
 ---
-
