@@ -35,6 +35,7 @@ Atualmente estou evoluindo minhas habilidades através de projetos reais, estudo
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" />
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="40 />  
+  <div>
   
 
 ---
