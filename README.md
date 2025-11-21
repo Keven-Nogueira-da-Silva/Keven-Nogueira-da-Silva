@@ -26,7 +26,8 @@ Atualmente estou evoluindo minhas habilidades através de projetos reais, estudo
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML" />
   <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS" />]
+<img src="assets/images/diagrama-drawio.png" alt="Diagrama Draw.io" height="40" title="Diagrama (draw.io)" />
 </div>
 
 ---
