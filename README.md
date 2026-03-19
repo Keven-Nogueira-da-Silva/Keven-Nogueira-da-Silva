@@ -46,20 +46,16 @@ Git e versionamento profissional
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" alt="VSCode" />
   <img width="8" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="Express" />
+  <img width="8" />
 </div>
+
 ---
-### 🔥 Projetos em Destaque
-| Projeto | Tecnologias | Descrição |
-|--------|-------------|-----------|
-| **API de Produtos e Estoque** | Node.js · Express · PostgreSQL | CRUD completo, categorias, controle de estoque e filtros avançados |
-| **Sistema de Gerenciamento de Usuários** | Node.js · Express · JWT · MongoDB | Autenticação, autorização e operações CRUD para usuários |
-| **Sistema de Reservas API** | Node.js · Express · PostgreSQL | API para gerenciamento de reservas com clientes e agendamentos |
-> *Posso adicionar os links assim que você me enviar seus repositórios.* (Se os links dos projetos forem os mesmos do portfólio, posso adicioná-los aqui )
----
+
 ### 🌎 Onde me encontrar
 - **LinkedIn:** https://www.linkedin.com/in/keven-nogueira-da-silva-44237b361/  
 - **Portfólio:** https://8080-ivovcqtryp7r895lfllpb-aa40a229.us2.manus.computer/
 ---
 ### ✨ Objetivo
-Ingressar como **Desenvolvedor Full-Stack Node.js**, criando soluções reais e evoluindo continuamente.
+Ingressar como **Desenvolvedor Full-Stack ou Back-end Node.js**, criando soluções reais e evoluindo continuamente.
 
