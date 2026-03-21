@@ -52,7 +52,7 @@ Git e versionamento profissional
 
 ### 🌎 Onde me encontrar
 - **LinkedIn:** https://www.linkedin.com/in/keven-nogueira-da-silva-44237b361/  
-- **Portfólio:** https://8080-ivovcqtryp7r895lfllpb-aa40a229.us2.manus.computer/
+- **Portfólio:** https://keven-nogueira-da-silva.github.io/Port-Keven-Nogueira/
 ---
 ### ✨ Objetivo
 Ingressar como **Desenvolvedor Full-Stack ou Back-end Node.js**, criando soluções reais e evoluindo continuamente.
