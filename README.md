@@ -5,13 +5,9 @@ Atualmente, estou evoluindo minhas skills através de projetos reais, aplicando 
 
 🚀 O que estou estudando e construindo
 Desenvolvimento Backend: Java 17+, Spring Boot (Data, Security, MVC) e Hibernate/JPA.
-
 Frontend Moderno: Integração de APIs Spring com interfaces em React + TypeScript.
-
 Bancos de Dados: Modelagem e persistência com PostgreSQL, MySQL e NoSQL (MongoDB).
-
 Arquitetura: Padrões de projeto, APIs RESTful e conceitos de Microsserviços.
-
 DevOps & Ferramentas: Docker, JUnit (Testes Unitários), Git e Versionamento Profissional.
 
 💻 Tecnologias e Ferramentas
@@ -34,9 +30,10 @@ DevOps & Ferramentas: Docker, JUnit (Testes Unitários), Git e Versionamento Pro
 <img width="8" />
 </div>
 
+
+
 🌎 Onde me encontrar
 LinkedIn: https://www.linkedin.com/in/keven-nogueira-44237b361/
-
 Portfólio: Acesse meu Portfólio
 
 ✨ Objetivo
