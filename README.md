@@ -34,7 +34,7 @@ DevOps & Ferramentas: Docker, JUnit (Testes Unitários), Git e Versionamento Pro
 
 🌎 Onde me encontrar
 
-LinkedIn: https://www.linkedin.com/in/keven-nogueira-da-silva-848273402/
+LinkedIn: hackeado :(
 
 Portfólio: https://keven-nogueira-da-silva.github.io/portfolio_keven_java/
 
